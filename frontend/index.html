@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroMetrics | Clinical NLP Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>NeuroMetrics</h1>
+            <p>Linguistic Biomarker Extraction Pipeline</p>
+        </header>
+
+        <main class="grid-layout">
+            <section class="input-section">
+                <h2>Clinical Transcript</h2>
+                <textarea id="transcriptInput" placeholder="Paste the patient's transcript here (e.g., Cookie Theft picture description)..."></textarea>
+                <button id="analyzeBtn">Analyze Speech</button>
+            </section>
+
+            <section class="results-section">
+                <h2>Cognitive Metrics</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h3>Lexical Density (TTR)</h3>
+                        <p id="ttrResult">--</p>
+                        <span class="subtext">Target: > 0.40</span>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Syntactic Complexity</h3>
+                        <p id="syntaxResult">--</p>
+                        <span class="subtext">Words per sentence</span>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Total Words</h3>
+                        <p id="totalWordsResult">--</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Unique Words</h3>
+                        <p id="uniqueWordsResult">--</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
