@@ -21,6 +21,7 @@ class AnalysisResponse(BaseModel):
     unique_words: int
     lexical_density_ttr: float
     avg_sentence_length: float
+    filler_word_count: int
 
 @app.get("/")
 def read_root():

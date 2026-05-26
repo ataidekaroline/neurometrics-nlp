@@ -15,12 +15,14 @@
         </header>
 
         <main class="grid-layout">
+            <!-- Left Column: Input -->
             <section class="input-section">
                 <h2>Clinical Transcript</h2>
                 <textarea id="transcriptInput" placeholder="Paste the patient's transcript here (e.g., Cookie Theft picture description)..."></textarea>
                 <button id="analyzeBtn">Analyze Speech</button>
             </section>
 
+            <!-- Right Column: Results -->
             <section class="results-section">
                 <h2>Cognitive Metrics</h2>
                 <div class="metrics-grid">
@@ -41,6 +43,12 @@
                     <div class="metric-card">
                         <h3>Unique Words</h3>
                         <p id="uniqueWordsResult">--</p>
+                    </div>
+                    <!-- Added Hesitation Markers Card -->
+                    <div class="metric-card">
+                        <h3>Hesitation Markers</h3>
+                        <p id="fillerResult">--</p>
+                        <span class="subtext">Filler words ("um", "uh")</span>
                     </div>
                 </div>
             </section>

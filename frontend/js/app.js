@@ -36,6 +36,7 @@ document.getElementById('analyzeBtn').addEventListener('click', async () => {
         document.getElementById('syntaxResult').textContent = data.avg_sentence_length;
         document.getElementById('totalWordsResult').textContent = data.total_words;
         document.getElementById('uniqueWordsResult').textContent = data.unique_words;
+        document.getElementById('fillerResult').textContent = data.filler_word_count;
 
     } catch (error) {
         console.error("Failed to extract metrics:", error);
